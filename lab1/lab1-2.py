@@ -1,4 +1,5 @@
 import numpy as np
+import pandas as pd
 
 # 1) Create Two numpy array of size 3 X 2 and 2 X 3
 # 2) Randomly Initalize that array
@@ -25,3 +26,6 @@ mean = np.mean(m1)
 # print(mean)
 
 # Convert Numeric entries(columns) of mtcars.csv to Mean Centered Version
+data = pd.read_csv('Exercise-CarData.csv')
+cent_prices = data['Price'] - np.mean(data['Price'], axis=0)
+print(cent_prices[:5])
