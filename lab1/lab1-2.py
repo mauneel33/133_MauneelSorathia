@@ -4,8 +4,9 @@ import numpy as np
 # 2) Randomly Initalize that array
 
 m1 = np.array([[1,2], [3,4], [5,6]])
-m2 = np.array([[10,20,30], [40, 50, 60]])
-# print(m1, m2)
+
+m2 = np.random.randint(100, size=(2, 3))
+#print(m1, m2)
 
 # 3) Perform matrix multiplication
 
